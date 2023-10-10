@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>The Joke</title>
+</head>
+<body>
+    <h1>The Joke</h1>
+    <div class="output">
+        <% if (locals.data) { %>
+            <p>Joke Type: <%= data.type %></p>
+            <% if (data.type === 'single') { %>
+                <h2>Joke: <%= data.joke %></h2>
+            <% } else { %>
+                <h2>Setup: <%= data.setup %></h1>
+                <h3>Delivery: <%= data.delivery %></h2>
+            <% } %>
+        <% } %>
+    </div>
+</body>
+</html>

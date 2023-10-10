@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Random Jokes</title>
+</head>
+<body>
+    <h1>Joke Generator</h1>
+    <h3>Please make your selection below, then hit get joke to get a random joke!</h3>
+    <form action="/" id="form" class="form" method="POST">
+            <p id="category">Category: </p>
+            <div class="choices" id="categories">
+                <span>
+                    <input type="checkbox" id="Programming" name="choice2" value="Programming">
+                    <label for="Programming"> Programming</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="Misc" name="choice2" value="Misc">
+                    <label for="Misc"> Misc</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="Dark" name="choice2" value="Dark">
+                    <label for="Dark"> Dark</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="Pun" name="choice2" value="Pun">
+                    <label for="Pun"> Pun</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="Spooky" name="choice2" value="Spooky">
+                    <label for="Spooky"> Spooky</label>
+                </span>
+                <span>
+                    <input type="checkbox" id="Christmas" name="choice2" value="Christmas">
+                    <label for="Christmas"> Christmas</label>
+                </span>
+            </div>
+                <p id="flag">Flags to remove: </p>
+                <div class="choices" id="flags">
+                    <span>
+                        <input type="checkbox" id="nsfw" name="choice" value="nsfw">
+                        <label for="nsfw"> nsfw</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="religious" name="choice" value="religious">
+                        <label for="religious"> religious</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="political" name="choice" value="political">
+                        <label for="political"> political</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="racist" name="choice" value="racist">
+                        <label for="racist"> racist</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="sexist" name="choice" value="sexist">
+                        <label for="sexist"> sexist</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="explicit" name="choice" value="explicit">
+                        <label for="explicit"> explicit</label>
+                    </span>
+                </div>
+            <p id="type">Joke Type: </p>
+                <div class="choices" id="types">
+                    <span>
+                        <input type="radio" id="all" name="choice3" value="all">
+                        <label for="all"> all</label>
+                    </span>
+                    <span>
+                        <input type="radio" id="single" name="choice3" value="single">
+                        <label for="single"> single</label>
+                    </span>
+                    <span>
+                        <input type="radio" id="twopart" name="choice3" value="twopart">
+                        <label for="twopart"> twopart</label>
+                    </span>
+                </div>
+        <button type="submit" class="form-submit">Get Joke</button>
+    </form>
+</body>
+</html>
